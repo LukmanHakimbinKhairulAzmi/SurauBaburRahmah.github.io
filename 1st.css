@@ -1,0 +1,360 @@
+*{
+  box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Work Sans', sans-serif;
+
+}
+
+
+.container{
+  background-image:
+  linear-gradient( rgba(46, 179, 214, 0.60), rgba(67, 204, 152, 0.60)), /* inset your image below */
+	url("css/pics/coverphotomasjid.jpg");
+  background-repeat: no-repeat;
+background-size: cover;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+img{
+
+  z-index: 0;
+}
+p{
+  font-family: 'Work Sans', sans-serif;
+}
+div{
+  height: 100vh;
+}
+#coverword,#coverwor{
+  font-size: 150px;
+  line-height: 118px;
+
+
+
+}
+#right{
+  background-color:  #48dbfb33;
+  height: 900px;
+  width:500px;
+  z-index: -1;
+  position: absolute;
+  top: 100vh;
+  right: 0;
+}
+
+nav{
+  float: right;
+  position: sticky; top: 0;
+  z-index: 10;
+
+
+
+
+
+}
+
+#halfcircle{
+  background-color:  #48dbfb99;
+  height:700px;
+  width:450px;
+  border-radius:0px 450px 450px 0px;
+z-index: -4;
+  margin:-8px;
+  position: relative;
+  bottom: 90px;
+
+}
+
+
+
+nav #ull{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav #lii{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#ull ,#lii{
+  float:right;
+  line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+
+nav a{
+  text-decoration: none;
+  display: block;
+    color: black;
+
+
+
+}
+
+nav a:hover{
+  border-bottom: 5px solid  #48dbfb33;
+}
+
+
+
+
+
+#one{
+  border-radius: 90px;
+  height: 300px;
+  width: 500px;
+
+}
+
+#two{
+   border-radius: 50%;
+   height: 300px;
+   width: 300px;
+   margin-left: 50px;
+}
+
+#three{
+  height: 400px;
+  width: 500px;
+  position: relative;
+  left: 150px;
+  margin-top: 20px;
+}
+
+#tajuk{
+  float:right;
+  position: relative;
+  top: 80px;
+  right:80px;
+  font-size: 110px;
+
+}
+
+#five{
+  height: 300px;
+  width: 450px;
+  position: relative;
+  right: -300px;
+  bottom: 50px;
+}
+
+.container{
+
+}
+
+#a{
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  margin: 100px auto;
+  position: relative;
+  top: 100px;
+  right: 180px;
+  font-size: 100px;
+}
+#b{
+  text-align: right;
+
+  margin:10px;
+  top: -360px;
+  right: 280px;
+
+  position: relative;
+}
+
+td {
+  text-align: center;
+}
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+table{
+font-size:30px;
+margin-top: 240px;
+}
+#time{
+  height: 100vh;
+  text-align:center;
+
+}
+
+#prayertime{
+font-size:100px;
+position: relative;
+top:170px;
+
+}
+
+
+#map{
+  text-align: center;
+  margin-top: 60px;
+  background-image: linear-gradient(white,#48dbfb,white);
+  padding-top: 10vh;
+}
+
+#location{
+  font-size: 90px;
+}
+
+.container2 {
+width: 60%;
+margin: 2rem auto;
+margin-left: 10px;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(8, 5vw);
+grid-gap: 1.5rem;
+}
+
+.gallery__img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery__item--1 {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3;
+
+/** Alternative Syntax **/
+/* grid-column: 1 / span 2;  */
+/* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+grid-column-start: 3;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 3;
+
+/** Alternative Syntax **/
+/* grid-column: 3 / span 2;  */
+/* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+grid-column-start: 5;
+grid-column-end: 9;
+grid-row-start: 1;
+grid-row-end: 6;
+
+/** Alternative Syntax **/
+/* grid-column: 5 / span 4;
+grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 3;
+grid-row-end: 6;
+
+/** Alternative Syntax **/
+/* grid-column: 1 / span 4;  */
+/* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 6;
+grid-row-end: 9;
+
+/** Alternative Syntax **/
+/* grid-column: 1 / span 4; */
+/* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+grid-column-start: 5;
+grid-column-end: 9;
+grid-row-start: 6;
+grid-row-end: 9;
+
+/** Alternative Syntax **/
+/* grid-column: 5 / span 4; */
+/* grid-row: 6 / span 3; */
+}
+#islamgeo{
+
+  position: absolute;
+  right:0px;
+  z-index:-2;
+}
+
+#price{
+  height: 100vh;
+}
+.columns {
+float: left;
+width: 33.3%;
+padding: 8px;
+}
+
+.price {
+list-style-type: none;
+border: 1px solid #eee;
+margin: 0;
+padding: 0;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+}
+
+.price:hover {
+box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+
+color: black;
+font-size: 25px;
+}
+
+.price li {
+border-bottom: 1px solid #eee;
+padding: 20px;
+text-align: center;
+}
+
+.price .grey {
+background-color: #eee;
+font-size: 20px;
+}
+
+.button {
+background-color:  #1d708399;
+border: none;
+color: white;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+}
+.containerprice{
+  position: relative;
+  top:90px;
+
+}
+
+#servicen{
+  font-size: 90px;
+}

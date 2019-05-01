@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- MEGAT MUHAMMAD HEIKAL BIN MEGAT ARIF FADILLAH (1729403) -->
+<html>
+<head><title>jQUERY AJAX</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--the link ajax -->
+<script>
+$(document).ready(function(){ //function created
+   //funtion when clicked
+    $.getJSON('https://www.e-solat.gov.my/index.php?r=esolatApi/TakwimSolat&period=today&zone=SGR01', function(kereta) {
+                  $('#date').html( kereta.prayerTime[0].date ); //call object kereta and car array num 1 for brand
+                  $('#day').html( kereta.prayerTime[0].day ); //call object kereta and car array num 1 for brand
+                  $('#imsk').html( kereta.prayerTime[0].imsak ); //call object kereta and car array num 1 for brand
+                  $('#fajr').html( kereta.prayerTime[0].fajr ); //call object kereta and car array num 1 for brand
+                  $('#syuruk').html( kereta.prayerTime[0].syuruk ); //call object kereta and car array num 1 for brand
+                  $('#dhur').html( kereta.prayerTime[0].dhuhr ); //call object kereta and car array num 1 for brand
+                  $('#asar').html( kereta.prayerTime[0].asr ); //call object kereta and car array num 1 for brand
+                  $('#mahgrib').html( kereta.prayerTime[0].maghrib ); //call object kereta and car array num 1 for brand
+                  $('#isyak').html( kereta.prayerTime[0].isha ); //call object kereta and car array num 1 for brand
+
+
+  });
+});
+</script>
+<style media="screen">
+  td {
+    text-align: center;
+}
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+}
+
+table{
+  font-size:30px;
+}
+#time{
+  height:100vh;
+
+}
+
+#prayertime{
+font-size:100px;
+
+}
+
+#time{
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="time">
+  <div id="headertime">
+    <h2 id="prayertime">Gombak Prayer Times</h2>
+
+  </div>
+<center>
+  <table>
+    <tr>
+      <td>Date</td>
+      <td>Day</td>
+      <td>Imsk</td>
+      <td>Fajr</td>
+      <td>Syuruk</td>
+      <td>Dhur</td>
+      <td>Asr</td>
+      <td>Mahgrib</td>
+      <td>Isyak</td>
+    </tr>
+
+    <tr>
+      <td id="date"></td>
+      <td id="day"></td>
+      <td id="imsk"></td>
+      <td id="fajr"></td>
+      <td id="syuruk"></td>
+      <td id="dhur"></td>
+      <td id="asar"></td>
+      <td id="mahgrib"></td>
+      <td id="isyak"></td>
+    </tr>
+  </table>
+</center>
+
+</div>
+
+
+
+
+</body>
+</html>
